@@ -1,0 +1,70 @@
+<!-- 20190356 컴퓨터학과 정다해 => 크롬으로 실행하였습니다. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이클래스 로그인</title>
+</head>
+<style>
+	h2{
+		 text-align:center;
+	}
+	table{
+		border-collapse:collapse;
+		margin: 0 auto;
+	}
+</style>
+
+<body onLoad="alert('어서오세요'); frm1.id.focus();">
+<!-- document.getElementById('id').focus();이걸로도 갈 수 있음 -->
+	<div>
+		<img alt="title_img" src="img/title_img.GIF" width="100%" height="20%">
+	</div>
+	
+	<h2>로그인</h2>
+	<hr>
+	<form name="frm1">
+		<table class="outerTable">
+			<tr>
+				<td><img alt="login_img" src="img/login_img.jpg"></td>
+				<td style="vertical-align: top" > <!-- 열 안에 다시 테이블 -->
+					<table>
+						<tr>
+							<th colspan="2">회원님의 아이디와 비밀번호를 정확히 입력하세요.<br></th>
+						</tr>
+			
+						<tr>
+							<th></th>
+							<td>
+								<select>
+									<option value=1 selected> 학부생 </option>
+									<option value=2> 교직원 </option>
+									<option value=3> 졸업생 </option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th style="text-align: left">아이디</th>
+							<td><input type=text id="id" class="id" style="background-color:yellow; width:50%"></td>
+						</tr>
+						
+						<tr>
+							<th style="text-align: left">패스워드</th>
+							<td><input type=password class="inputSize" style="background-color:yellow; width:50%"></td>
+						</tr>
+						
+						<tr>
+							<th colspan="2" style="text-align: left">
+							<br>
+								<input type=button value=로그인 onclick="alert('회원이 아니시군요')">&nbsp;<input type=button value=가입하기 onclick="document.location='member2.html' ">
+							</th>					
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!-- 20190356 컴퓨터학과 정다해 => 크롬으로 실행하였습니다. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계산기 프로그램</title>
+<script>
+        function calc() {
+            var exp = prompt('계산할 수식을 입력하세요');
+            var result = eval(exp); // 식을 계산하고 result 변수에 저장합니다.
+           	if (result != null){
+            	alert(result);
+           	}
+            if(result == null){
+            	alert("계산을 취소합니다.");
+            }
+        }
+    </script>
+</head>
+<style>
+	table{
+		border-collapse:collapse;
+		margin: 0 auto;
+	}
+</style>
+<body>
+	<table>
+		<tr>
+			<th colspan="2"><img alt="title_img" src="img/Cal_Topimg.GIF"></th>
+		</tr>
+		<tr>
+			<th style="text-align: left"><img alt="title_img" src="img/Cal_Sideimg.GIF"></th>
+			<th> <input type=button value="계산하기" onclick="calc()" style="margin-right:30px" ></th>
+		</tr>
+		<tr>
+		<th colspan="2"><img alt="title_img" src="img/Cal_Bottomimg.GIF"></th>
+		</tr>
+		
+	</table>
+</body>
+</html>
